@@ -35,7 +35,7 @@ this function is limited to only two groups.
 data(ffg.cast)
 ffg.hel <- decostand(ffg.cast[,-1:-4], 'hellinger')
 pca.hel <- rda(ffg.hel)
-pca.plot(pca.hel, ffg.cast$CU, ffg.cast$CU, ffg.cast.hel, cex=1.5, main='Plot 1')
+pca.plot(pca.hel, ffg.cast$CU, ffg.cast$CU, ffg.hel, cex=1.5, main='Plot 1')
 }
 \keyword{vegan}
 

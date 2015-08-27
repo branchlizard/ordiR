@@ -27,6 +27,7 @@ containing correlation values for each group when compared to each
 species vector.
 }
 \examples{
+###Example 1###
 data(ffg.cast)
 ffg.hel <- decostand(ffg.cast[,-1:-4], 'hellinger')
 pca.hel <- rda(ffg.hel)
@@ -36,6 +37,16 @@ text(pca.hel.scores, labels=ffg.cast$YR.POSTREST, pos=3)
 lines(pca.hel.scores[-4:-6,], col='red')
 lines(pca.hel.scores[-1:-3,], col='green')
 pca.reg(pca.hel, ffg.cast$CU, ffg.cast, 0.25, plot=TRUE)
+
+###Example 2###
+data(ffg.cast2)
+ffg.hel <- decostand(ffg.cast2[,-1:-5], 'hellinger')
+pca.hel <- rda(ffg.hel)
+pca.hel.scores <- scores(pca.hel, display='sites', scaling=1)
+pca.hel.plot <- pca.plot(pca.hel, ffg.cast$CU, ffg.cast$CU, ffg.hel, cex=1.5)
+text(pca.hel.scores, labels=ffg.cast$YR.POSTREST, pos=3)
+pca.reg(pca.hel, ffg.cast$CU, ffg.cast, 0.25, plot=TRUE)
+
 }
 \keyword{vegan}
 

@@ -13,7 +13,8 @@
 Convert levels of type character into numeric
 }
 \examples{
-levels.to.num()
+data(ffg.cast)
+levels.to.num(ffg.cast$CU)
 }
 \keyword{vegan}
 

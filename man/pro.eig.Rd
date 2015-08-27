@@ -2,7 +2,7 @@
 % Please edit documentation in R/pro.eig.R
 \name{pro.eig}
 \alias{pro.eig}
-\title{A Function to Allow the Computation of the Proportion of Variance Explained By Each Eigenvalue.}
+\title{Proportion of Variance Explained}
 \usage{
 pro.eig(pca.object)
 }
@@ -10,10 +10,17 @@ pro.eig(pca.object)
 \item{pca.object}{an object resulting from the rda function (vegan).}
 }
 \description{
-A Function to Allow the Computation of the Proportion of Variance Explained By Each Eigenvalue.
+A Function to allow the computation of the proportion of variance explained by each eigenvalue.
 }
 \examples{
-pro.eig()
+data(ffg.cast)
+ffg.hel <- decostand(ffg.cast[,-1:-4], 'hellinger')
+pca.hel <- rda(ffg.hel)
+pca.scores <- scores(pca.hel, display='sites', scaling=1)
+pca.species <- scores(pca.hel, display='species', scaling=1)
+plot(pca.hel, display='sites', scaling=1, type='n', main='PCA Biplot',
+     xlab=paste('PC1 \n Proportion Explained = ', round(pro.eig(pca.hel)[1]*100, 2), '%'),
+     ylab=paste('PC2 \n Proportion Explained = ', round(pro.eig(pca.hel)[2]*100, 2), '%'))
 }
 \keyword{vegan}
 

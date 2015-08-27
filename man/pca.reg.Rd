@@ -18,9 +18,13 @@ pca.reg(pca.object, group, matrix.name, myscale, plot = TRUE)
 \item{plot}{Plot the regression lines Defaults to TRUE.}
 }
 \description{
-This functions allows one to perform a linear regression on groups of PCA points to determine the trajectory of points within a specified group.
-The regression lines for each group are then used to determine the correlation values between these lines and  all species vectors which are beyond the circle of equlibrium.
-The output is a dataframe containing correlation values for each group when compared to each species vector.
+This function allows one to perform a linear regression on groups of
+PCA points to determine the trajectory or trend of objects within a
+group. The regression lines for each group are then used to determine
+the correlation values between these lines and all species vectors which
+are beyond the circle of equlibrium. The output is a dataframe
+containing correlation values for each group when compared to each
+species vector.
 }
 \examples{
 data(ffg.cast)
@@ -32,8 +36,6 @@ text(pca.hel.scores, labels=ffg.cast$YR.POSTREST, pos=3)
 lines(pca.hel.scores[-4:-6,], col='red')
 lines(pca.hel.scores[-1:-3,], col='green')
 pca.reg(pca.hel, ffg.cast$CU, ffg.cast, 0.25, plot=TRUE)
-
-
 }
 \keyword{vegan}
 

@@ -29,7 +29,8 @@ pca.plot(pca.object, col.factor, pch.factor, matrix.name, scaling = 1,
 \description{
 A custom PCA biplotting function which allows the user to define the
 color and type of the points based on the groups examined. Currently,
-this function is limited to only two groups.
+this function is limited to only two groups, but multiple levels of each
+group is supported.
 }
 \examples{
 data(ffg.cast)

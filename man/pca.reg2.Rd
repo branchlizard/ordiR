@@ -16,9 +16,10 @@ pca.reg2(pca.object, sp.name, group, plot = TRUE)
 \item{plot}{Plot the regression lines Defaults to TRUE.}
 }
 \description{
-This functions allows one to perform a linear regression on groups of PCA points to determine the trajectory of points within a specified group.
+This functions allows one to perform a linear regression on groups of
+PCA points to determine the trajectory or trend of points within a specified group.
 The regression lines for each group are then used to determine the correlation values between these lines and a specified species vector.
-The output is a dataframe containing correlation values for each group when compared to the specified species vector..
+The output is a dataframe containing correlation values for each group when compared to the specified species vector.
 }
 \examples{
 data(ffg.cast)

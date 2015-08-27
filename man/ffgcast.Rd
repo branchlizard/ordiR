@@ -5,7 +5,7 @@
 Functional Feeding Group Matrix
 }
 \description{
-This dataset consists of macroinvertebrate functional feeding group data
+This dataset consists of macroinvertebrate functional feeding group biomass data
 collected from Slab Camp Creek in Kentucky. 
 }
 \usage{data("ffg.cast")}

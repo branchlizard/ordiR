@@ -1,0 +1,8 @@
+Package: OrdiR
+Title: Random Ordination Functions for Vegan
+Version: 0.0.0.9000
+Authors@R: person("Grayson", "Patton", email = "patton.grayson@gmail.com", role = c("aut", "cre"))
+Description: Ordination methods and other functions for the vegan package.
+Depends: R (>= 3.1.1), vegan
+License: GPL-2
+LazyData: yes

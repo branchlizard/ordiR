@@ -1,0 +1,39 @@
+\name{ffg.cast2}
+\alias{ffg.cast2}
+\docType{data}
+\title{
+%%   ~~ data name/kind ... ~~
+}
+\description{
+%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+}
+\usage{data("ffg.cast2")}
+\format{
+  A data frame with 18 observations on the following 10 variables.
+  \describe{
+    \item{\code{SAMPID}}{a character vector}
+    \item{\code{STREAM}}{a factor with levels \code{SC}}
+    \item{\code{SEASON}}{a character vector}
+    \item{\code{CU}}{a factor with levels \code{pool} \code{riffle}}
+    \item{\code{YR.POSTREST}}{a factor with levels \code{1} \code{2} \code{3}}
+    \item{\code{COLLECTOR.FILTERER}}{a numeric vector}
+    \item{\code{COLLECTOR.GATHERER}}{a numeric vector}
+    \item{\code{HERBIVORE}}{a numeric vector}
+    \item{\code{PREDATOR}}{a numeric vector}
+    \item{\code{SHREDDER}}{a numeric vector}
+  }
+}
+\details{
+%%  ~~ If necessary, more details than the __description__ above ~~
+}
+\source{
+%%  ~~ reference to a publication or URL from which the data were obtained ~~
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(ffg.cast2)
+## maybe str(ffg.cast2) ; plot(ffg.cast2) ...
+}
+\keyword{datasets}
